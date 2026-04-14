@@ -20,8 +20,8 @@ OpsFlow brings booking, customer records, resources, and day-to-day operations i
 
 | Layer | Technology |
 |-------|------------|
-| Frontend | Next.js |
-| Backend | Node.js / Bun |
+| Frontend | TanStack |
+| Backend | pnpm + tbd |
 | Database | PostgreSQL |
 | Queue | BullMQ |
 
