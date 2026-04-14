@@ -35,6 +35,9 @@ importers:
       '@tanstack/router-plugin':
         specifier: ^1.132.0
         version: 1.163.2(@tanstack/react-router@1.163.2(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(vite@7.3.2(@types/node@25.3.0)(jiti@2.6.1)(lightningcss@1.31.1)(tsx@4.21.0))
+      '@workspace/api':
+        specifier: workspace:*
+        version: link:../../packages/api
       '@workspace/ui':
         specifier: workspace:*
         version: link:../../packages/ui
@@ -81,6 +84,19 @@ importers:
       vite:
         specifier: ^7.3.2
         version: 7.3.2(@types/node@25.3.0)(jiti@2.6.1)(lightningcss@1.31.1)(tsx@4.21.0)
+
+  packages/api:
+    dependencies:
+      hono:
+        specifier: ^4.11.3
+        version: 4.12.12
+    devDependencies:
+      '@types/node':
+        specifier: ^25.1.0
+        version: 25.3.0
+      typescript:
+        specifier: ^5.9.3
+        version: 5.9.3
 
   packages/ui:
     dependencies:
