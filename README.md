@@ -1,21 +1,39 @@
-# shadcn/ui monorepo template
+# OpsFlow
 
-This is a TanStack Start monorepo template with shadcn/ui.
+Configurable scheduling, CRM, and operations for service-based businesses (barbers, salons, car washes, mechanics, and similar). Supports solo operators and teams, with a flexible architecture and a built-in AI assistant.
 
-## Adding components
+## Overview
 
-To add components to your app, run the following command at the root of your `web` app:
+OpsFlow brings booking, customer records, resources, and day-to-day operations into one place so teams can run the business without juggling disconnected tools.
 
-```bash
-pnpm dlx shadcn@latest add button -c apps/web
-```
+## Core features
 
-This will place the ui components in the `packages/ui/src/components` directory.
+- Multi-tenant architecture
+- Booking and scheduling
+- CRM (customers, history, tags)
+- Resource management (people and assets)
+- Payments tracking (manual)
+- Public booking portal
+- In-app chat and AI assistant
 
-## Using components
+## Tech stack
 
-To use the components in your app, import them from the `ui` package.
+| Layer | Technology |
+|-------|------------|
+| Frontend | Next.js |
+| Backend | Node.js / Bun |
+| Database | PostgreSQL |
+| Queue | BullMQ |
 
-```tsx
-import { Button } from "@workspace/ui/components/button";
-```
+## Getting started
+
+1. Clone the repository.
+2. Install dependencies.
+3. Configure environment variables.
+4. Run database migrations.
+5. Start the development server.
+
+## Documentation
+
+- [Product requirements (PRD)](PRD.md)
+- [Roadmap](ROADMAP.md)
